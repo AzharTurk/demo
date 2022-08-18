@@ -2,15 +2,15 @@
   "name": "my-app",
   "version": "0.0.0",
   "config": {
-    "GIT_REPO":"https://zubairmalla.github.io/my-angular/",
-    "PUBLISH_FOLDER":"../published/my-angular"
+    "GIT_REPO": "https://zubairmalla.github.io/my-angular/",
+    "PUBLISH_FOLDER": "../published/my-angular"
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-prod":"ng build --base-href=\"%npm_package_config_GIT_REPO%\"",
-    "postbuild-prod":"ngh --dir=\"%npm_package_config_PUBLISH_FOLDER%\"",
+    "build-prod": "ng build --base-href=\"%npm_package_config_GIT_REPO%\"",
+    "postbuild-prod": "ngh --dir=\"%npm_package_config_PUBLISH_FOLDER%\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -24,6 +24,7 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
+    "ng2": "^0.2.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

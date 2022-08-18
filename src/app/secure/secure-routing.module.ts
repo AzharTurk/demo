@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CourseViewComponent } from './courses/course-view.component';
 
 import { DashComponent } from './dash.component';
+import { FormComponent } from './form/form.component';
+import { TableComponent } from './table/table.component';
 
-const COURSES_ROUTES:Routes=[
-  {
-    path:'',
-    loadChildren:()=>import('./courses/courses-routing.module').then((x)=>x.CoursesRoutingModule)
-  }
-]
+
 const NOTIFICATIONS_ROUTES:Routes=[
   {
     path:'',
@@ -23,12 +21,20 @@ const routes: Routes = [
     pathMatch:'full'
   },
   {
-    path:'dash',
+    path:'',
     component:DashComponent
   },
   {
     path:'course',
-    children:COURSES_ROUTES,
+    component:CourseViewComponent
+  },
+  {
+    path:'form',
+    component:FormComponent
+  },
+  {
+    path:'table',
+    component:TableComponent
   },
   {
     path:'notification',

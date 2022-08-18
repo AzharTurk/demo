@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CourseAddEditComponent } from './course-add-edit.component';
 import { CourseViewComponent } from './course-view.component';
 
 const routes: Routes = [
@@ -14,14 +13,7 @@ const routes: Routes = [
     path:'view',
     component:CourseViewComponent
   },
-  {
-    path:'add',
-    component:CourseAddEditComponent
-  },
-  {
-    path:'edit/:courseId',
-    component:CourseAddEditComponent
-  }
+
 ];
 
 @NgModule({
